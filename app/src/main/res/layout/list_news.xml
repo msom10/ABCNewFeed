@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:visibility="visible"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:id="@+id/newsTitle"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/frameLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:id="@+id/newsDesc"
+            android:layout_below="@+id/newsTitle"
+            android:layout_alignStart="@+id/newsTitle" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/frameLayout">
+
+            <msoma.abcnewsfeed.extras.SquareImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:adjustViewBounds="false"
+                android:transitionName="imageTransition"
+                android:scaleType="centerInside"
+                android:layout_toStartOf="@+id/newsDesc"
+
+                android:paddingRight="2dp"
+                android:layout_gravity="center_vertical"
+
+               />
+
+
+
+      </FrameLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
