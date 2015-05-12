@@ -145,7 +145,6 @@ public class MainActivity extends Activity {
                     String tempThumbNail = null;
 
 
-                    //
                    // for(int i =0;i<entries.length();i++){
                     for(int i =0;i<9;i++){
                         JSONObject temp = (JSONObject) entries.get(i);
