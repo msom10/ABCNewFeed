@@ -9,8 +9,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.text.format.Time;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -147,6 +145,7 @@ public class MainActivity extends Activity {
                     String tempThumbNail = null;
 
 
+                    //
                    // for(int i =0;i<entries.length();i++){
                     for(int i =0;i<9;i++){
                         JSONObject temp = (JSONObject) entries.get(i);
